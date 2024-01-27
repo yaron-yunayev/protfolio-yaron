@@ -1,0 +1,146 @@
+* { 
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1920px;
+  height: fit-content;
+}
+
+.img1 {
+  width: 1400px;
+  height: 350px;
+}
+
+.desktop-image {
+  width: 100%;
+  height: 100%;
+}
+
+.img2 {
+  display: none;
+}
+
+.form-box {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  background-color: #1a1a1ad4;
+  width: 418px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.form-box h1 {
+  color: #ffffff;
+  font-family: Heebo;
+  text-align: center;
+}
+
+.form-box p {
+  color: #ffffff;
+  font-family: Heebo;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.form-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-text label {
+  color: #ffffff;
+  display: block;
+  text-align: right;
+  font-family: Heebo;
+  font-size: 0.8rem;
+}
+
+#Name,
+#email {
+  border: none;
+  width: 318px;
+  height: 5vh;
+  text-align: right;
+}
+
+.button input {
+  background-color: #d31c75;
+  color: #ffffff;
+  border: none;
+  width: 68px;
+  height: 35px;
+  font: normal normal bold 22px/30px Heebo;
+  font-size: 0.8rem;
+  
+}
+
+input:focus {
+  outline: none;
+}
+
+.button {
+  text-align: right;
+}
+
+@media (max-width: 870px) {
+  .desktop-image {
+    display: none;  
+  }
+  .img1{
+    width: 100%;
+  }
+  .container{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img2 {
+    display: block;
+    width: 970px;
+  }
+ .form{
+  text-align: center;
+ 
+ }
+ .form-box{
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+width: 299px;
+height: 441px;
+  left: 230px;
+ }
+  .form-box h1 {
+    font: normal normal 900 25px/30px Heebo;
+  }
+
+  .form-box p {
+    font: normal normal normal 15px/22px Heebo;
+    text-align: center;
+    padding: 25px;
+  }
+
+  .form-box {
+    width: 299px;
+    height: 441px;
+    top: 8%;
+  }
+
+  #Name,
+  #email {
+    width: 170px;
+  }
+
+  .button input {
+    width: 90px;
+  }
+}

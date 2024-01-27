@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px; 
+}
+#top1 {
+    position: sticky;
+     top: 0;
+     right: 0;
+}
+#container-header{
+display: flex;
+justify-content: space-around;
+width: 100%;
+background-color:  rgb(17, 16, 16);
+align-items: center;
+color: wheat;
+}
+#container-header a{
+    text-decoration: none;
+    color: wheat;
+
+}
+#container-footer{
+ background-color: rgb(17, 16, 16);
+padding: 8px;
+display: flex;
+justify-content: space-between;
+ color:wheat;
+}
+main{
+    text-align: center;
+    height: auto;
+    background-color: rgb(248, 208, 132);
+    
+}
+
+   
+#imgers{
+    height: auto;
+    max-width: 100%;
+}
+main p{
+    color: rgb(36, 35, 35);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100px;
+}
+
+#btns {
+    margin: 2em;
+}
+
+#btns a {
+    text-decoration: none;
+    background-color: rgb(255, 170, 12);
+    color: azure;
+    font-weight: bolder;
+    padding: .5em;
+    border-radius: 5px;
+    margin: 0 1em;
+    transition: .5s;
+}
+
+ #btns a:hover {
+    opacity: .8;
+    transition: .5s;
+    background-color: black;
+}
+
+@media (width < 870px){
+   #top1{
+    width: auto;
+   }
+   #container-header{
+    flex-wrap: wrap;
+   }
+   main{
+    flex-wrap: wrap;
+   }
+    main p{
+    font-size: small;
+}
+#btns{
+    margin: 1em;
+}
+#imgers {
+    max-width: 100%; 
+    margin: 0 auto; 
+}
+
+#img3 {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+
+}
+}
+
+
+
+

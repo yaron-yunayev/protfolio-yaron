@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    display: flex;
+}
+
+
+#container-content {
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15em;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 50%;
+}
+
+#form>h1 {
+    font: normal normal 900 43px/63px Heebo;
+    letter-spacing: 0px;
+    color: #020253;
+}
+
+#form>p {
+    font: normal normal normal 20px/29px Heebo;
+    letter-spacing: 0px;
+    color: #020253;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control>label {
+    font: normal normal bold 16px/24px Heebo;
+    letter-spacing: 0px;
+    color: #2C2C2C;
+}
+
+.form-control>input {
+    height: 50px;
+    background: #E5EEFF;
+    border: 0;
+    border-bottom: 5px solid #020253;
+
+}
+
+.form-control>input[type=submit] {
+    background: #020253;
+    color: #FFFFFF;
+    width: 50%;
+    font: normal normal bold 22px/30px Heebo;
+    margin-top: 1em;
+}
+
+@media screen and (max-width:1400px) {
+    #container {
+        flex-direction: column;
+    }
+
+    #form {
+        width: 70%;
+    }
+
+    #container-img>img {
+        width: 100%;
+    }
+
+    #container-content {
+        margin: 5em 0;
+    }
+
+    #form>h1 {
+        font: normal normal 900 28px/41px Heebo;
+    }
+
+    #form>p {
+        font: normal normal normal 15px/22px Heebo;
+    }
+
+    .form-control>label {
+        font: normal normal bold 10px/14px Heebo;
+    }
+
+    .form-control>input {
+        height: 34px;
+    }
+
+    .form-control>input[type=submit] {
+        width: 100%;
+    }
+}
