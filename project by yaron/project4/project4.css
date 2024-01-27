@@ -159,40 +159,93 @@
   
 
 
-@media (max-width: 870px) {
- .icons{
-  display: none;
- }
- .img1{
-  display: none;
- }
- .main {
-  flex-direction: column;
-  align-items: center;
-}
-
-.main .phone-img {
-  order: -1;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.form-section1,
-.form-section2 {
+  @media (max-width: 750px) {
+    .container {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #top-right {
+        width: 100vw;
+        justify-content: flex-end;
+    }
+    
+    .img1 {
+        display: none;
+    }
+    .main {
+        height: 800px;
+        flex-direction: column-reverse;
+    }
+    .main .phone-img img {
+      width: 79px;
+      height: 119px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
   
-  gap: 10px; 
-  width: 100%;
-}
-
-.form-section2 {
-  align-items: center; 
-   }
-
-#name,
-#email,
-#detail,
-#submit {
-  width: auto;
-}
-}
+    }
+    .title h1 {
+        font: normal normal 900 40px/59px Heebo;
+        text-align: center;
+        margin-bottom: 30px;
+        
+    }
+    .title p p {
+        font: normal normal normal 15px/22px Heebo;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .form-section1 {
+        height: 20vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 50px;
+    }
+    .form-section2  {
+        height: 25.5vh;
+        margin: 5px;
+    }
+    form label {
+        font: normal normal bold 10px/14px Heebo;
+    }
+    .form-section2{
+      display: flex;
+      flex-direction: column;
+    }
+    .form-section2 label{
+      margin-top: 15px;
+      margin-left: 10px;
+    }
+    
+    #name,
+    #email {
+        width: 309px;
+        height: 37px;
+        border-bottom: 3px solid #fdbd03;
+        margin-top: 5px;
+        
+    }
+    #deatil {
+        width: 309px;
+        height: 106px;
+        border-bottom: 3px solid #fdbd03;
+        gap: 5px;
+        margin-top: 15px;
+       
+    }
+    #submit {
+        width: 310px;
+        height: 37px;
+        font: normal normal bold 15px/21px Heebo;
+        gap: 5px;
+        
+    
+    }
+    .icons{
+      display: none;
+    }
+  }
